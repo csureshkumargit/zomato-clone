@@ -1,0 +1,709 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  [class*="col-fil"] {
+    float: left;
+    padding: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  @media only screen and (max-width:600px){
+    [class*="col-fil"] {
+      width: 100%;
+    }
+  .logo {
+      
+    font-family: Poppins;
+    font-size: 33px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.52;
+    letter-spacing: normal;
+    text-align: left;
+    color: #eb2929;
+    width: 52px;
+    height: 52px;
+    background-color: #ffffff;
+    border-radius: 26px;
+    text-align: center;
+    margin-top: 0.5px;
+    margin-left:13px;
+    display:inline-block;
+    cursor: pointer;
+    
+  }
+  
+  
+  
+  
+  
+    .login {
+      width: 43px;
+    height: 23px;
+    margin: 14px 26px 11px 0;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff; 
+      display: inline-block;
+      cursor: pointer;
+      
+    }
+  
+    .account {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      display: inline-block;
+      margin: 0 0 0 26px;
+    padding: 5px 5px 5px 5px;
+      border-radius: 3px;
+    border: solid 1px #ffffff;
+    cursor: pointer;
+  }
+
+  
+  .username {
+    
+  height: 23px;
+  margin: 14px 26px 11px 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff; 
+    display: inline-block;
+    
+  }
+
+  .logout {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 0 0 26px;
+  padding: 5px 5px 5px 5px;
+    border-radius: 3px;
+  border: solid 1px #ffffff;
+  cursor: pointer;
+}
+    
+    .customerlogin
+    {
+        display: inline-block;
+        cursor: pointer;
+        
+    }
+  
+    .header
+    {
+      width: 100%;
+      padding: 1% 2% 1% 3%;
+      background-color: #ce0505;
+    }
+    .btn-acct-signin{
+      width: 10em;
+margin-top: 1em;
+margin-left: 7em;
+height: 1.9em;
+background-color: red;
+color: white;
+border-radius: 1em;
+outline: none;
+cursor: pointer;
+}
+
+.add-to-cart-modal-close{
+  margin-left: 1em;
+}
+    
+  
+  }
+  
+  @media only screen and (min-width: 600px) and (max-width:767px){
+    .col-fil-s-1 {width: 8.33%;}
+    .col-fil-s-2 {width: 16.66%;}
+    .col-fil-s-3 {width: 25%;}
+    .col-fil-s-4 {width: 33.00%;}
+    .col-fil-s-5 {width: 41.66%;}
+    .col-fil-s-6 {width: 50%;}
+    .col-fil-s-7 {width: 58.33%;}
+    .col-fil-s-8 {width: 66.66%;}
+    .col-fil-s-9 {width: 75%;}
+    .col-fil-s-10 {width: 83.33%;}
+    .col-fil-s-11 {width: 91.66%;}
+    .col-fil-s-12 {width: 100%;}
+  
+  .logo {
+      
+    font-family: Poppins;
+    font-size: 33px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.52;
+    letter-spacing: normal;
+    text-align: left;
+    color: #eb2929;
+    width: 52px;
+    height: 52px;
+    background-color: #ffffff;
+    border-radius: 26px;
+    text-align: center;
+    margin-top: 0.5px;
+    margin-left:13px;
+    display:inline-block;
+    cursor: pointer;
+  }
+  
+  
+    .login {
+      width: 43px;
+    height: 23px;
+    margin: 14px 26px 11px 0;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff; 
+      display: inline-block;
+      cursor: pointer;
+      
+    }
+  
+    .account {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      display: inline-block;
+      margin: 0 0 0 26px;
+    padding: 5px 5px 5px 5px;
+      border-radius: 3px;
+    border: solid 1px #ffffff;
+    cursor: pointer;
+  }
+    
+  
+  .username {
+    
+  height: 23px;
+  margin: 14px 26px 11px 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff; 
+    display: inline-block;
+    
+  }
+
+  .logout {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 0 0 26px;
+  padding: 5px 5px 5px 5px;
+    border-radius: 3px;
+  border: solid 1px #ffffff;
+  cursor: pointer;
+}
+    .customerlogin
+    {
+        display: inline-block;
+        
+    }
+  
+    .header
+    {
+      width: 100%;
+      padding: 1% 2% 1% 3%;
+      background-color: #ce0505;
+    }
+    .btn-acct-signin{
+      width: 10em;
+margin-top: 1em;
+margin-left: 7em;
+height: 1.9em;
+background-color: red;
+color: white;
+border-radius: 1em;
+outline: none;
+cursor: pointer;
+}
+
+.add-to-cart-modal-close{
+  margin-left: 1em;
+}
+    
+   
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) and (max-width:991px){
+    .col-fil-m-1 {width: 8.33%;}
+    .col-fil-m-2 {width: 16.66%;}
+    .col-fil-m-3 {width: 25%;}
+    .col-fil-m-4 {width: 33.00%;}
+    .col-fil-m-5 {width: 41.66%;}
+    .col-fil-m-6 {width: 50%;}
+    .col-fil-m-7 {width: 58.33%;}
+    .col-fil-m-8 {width: 66.66%;}
+    .col-fil-m-9 {width: 75%;}
+    .col-fil-m-10 {width: 83.33%;}
+    .col-fil-m-11 {width: 91.66%;}
+    .col-fil-m-12 {width: 100%;}
+  
+  .logo {
+      
+    font-family: Poppins;
+    font-size: 33px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.52;
+    letter-spacing: normal;
+    text-align: left;
+    color: #eb2929;
+    width: 52px;
+    height: 52px;
+    background-color: #ffffff;
+    border-radius: 26px;
+    text-align: center;
+    margin-top: 0.5px;
+    margin-left:13px;
+    display:inline-block;
+    cursor: pointer;
+  }
+  
+  .login {
+    width: 43px;
+  height: 23px;
+  margin: 14px 26px 11px 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff; 
+    display: inline-block;
+    cursor: pointer;
+    
+  }
+  
+   
+   
+    .account {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      display: inline-block;
+      margin: 0 0 0 26px;
+    padding: 5px 5px 5px 5px;
+      border-radius: 3px;
+    border: solid 1px #ffffff;
+    cursor: pointer;
+  }
+
+  .username {
+    
+  height: 23px;
+  margin: 14px 26px 11px 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff; 
+    display: inline-block;
+    
+  }
+  
+   
+   
+    .logout {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      display: inline-block;
+      margin: 0 0 0 26px;
+    padding: 5px 5px 5px 5px;
+      border-radius: 3px;
+    border: solid 1px #ffffff;
+    cursor: pointer;
+  }
+    
+    .customerlogin
+    {
+        display: inline-block;
+        
+    }
+  
+    .header
+    {
+      width: 100%;
+      padding: 1% 2% 1% 3%;
+      background-color: #ce0505;
+    }
+    
+    .btn-acct-signin{
+      width: 10em;
+margin-top: 1em;
+margin-left: 7em;
+height: 1.9em;
+background-color: red;
+color: white;
+border-radius: 1em;
+outline: none;
+cursor: pointer;
+}
+
+.add-to-cart-modal-close{
+  margin-left: 1em;
+}
+   
+  }
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) and (max-width:1199px) {
+    .col-fil-lg-1 {width: 8.33%;}
+    .col-fil-lg-2 {width: 16.66%;}
+    .col-fil-lg-3 {width: 25%;}
+    .col-fil-lg-4 {width: 33.00%;}
+    .col-fil-lg-5 {width: 41.66%;}
+    .col-fil-lg-6 {width: 50%;}
+    .col-fil-lg-7 {width: 58.33%;}
+    .col-fil-lg-8 {width: 66.66%;}
+    .col-fil-lg-9 {width: 75%;}
+    .col-fil-lg-10 {width: 83.33%;}
+    .col-fil-lg-11 {width: 91.66%;}
+    .col-fil-lg-12 {width: 100%;}
+  
+  
+  .logo {
+      
+    font-family: Poppins;
+    font-size: 33px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.52;
+    letter-spacing: normal;
+    text-align: left;
+    color: #eb2929;
+    width: 52px;
+    height: 52px;
+    background-color: #ffffff;
+    border-radius: 26px;
+    text-align: center;
+    margin-top: 0.5px;
+    margin-left:13px;
+    display:inline-block;
+    cursor: pointer;
+  }
+  
+  .login {
+    width: 43px;
+  height: 23px;
+  margin: 14px 26px 11px 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff; 
+    display: inline-block;
+    cursor: pointer;
+    
+  }
+  
+   
+    .account {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      display: inline-block;
+      margin: 0 0 0 26px;
+    padding: 5px 5px 5px 5px;
+      border-radius: 3px;
+    border: solid 1px #ffffff;
+    cursor: pointer;
+  }
+
+  .username {
+    
+  height: 23px;
+  margin: 14px 26px 11px 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff; 
+    display: inline-block;
+    
+  }
+  
+   
+    .logout {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      display: inline-block;
+      margin: 0 0 0 26px;
+    padding: 5px 5px 5px 5px;
+      border-radius: 3px;
+    border: solid 1px #ffffff;
+    cursor: pointer;
+  }
+  
+    
+    .customerlogin
+    {
+        display: inline-block;
+        
+    }
+  
+    .header
+    {
+      width: 100%;
+      padding: 1% 2% 1% 3%;
+      background-color: #ce0505;
+    }
+    .btn-acct-signin{
+      width: 10em;
+margin-top: 1em;
+margin-left: 7em;
+height: 1.9em;
+background-color: red;
+color: white;
+border-radius: 1em;
+outline: none;
+cursor: pointer;
+}
+
+.add-to-cart-modal-close{
+  margin-left: 1em;
+}
+   
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .col-fil-xlg-1 {width: 8.33%;}
+    .col-fil-xlg-2 {width: 16.66%;}
+    .col-fil-xlg-3 {width: 25%;}
+    .col-fil-xlg-4 {width: 33.00%;}
+    .col-fil-xlg-5 {width: 41.66%;}
+    .col-fil-xlg-6 {width: 50%;}
+    .col-fil-xlg-7 {width: 58.33%;}
+    .col-fil-xlg-8 {width: 66.66%;}
+    .col-fil-xlg-9 {width: 75%;}
+    .col-fil-xlg-10 {width: 83.33%;}
+    .col-fil-xlg-11 {width: 91.66%;}
+    .col-fil-xlg-12 {width: 100%;}
+  
+  
+  .logo {
+      
+    font-family: Poppins;
+    font-size: 33px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.52;
+    letter-spacing: normal;
+    text-align: left;
+    color: #eb2929;
+    width: 52px;
+    height: 52px;
+    background-color: #ffffff;
+    border-radius: 26px;
+    text-align: center;
+    margin-top: 0.5px;
+    margin-left:13px;
+    display:inline-block;
+    cursor: pointer;
+  }
+  
+  
+  
+    .login {
+      width: 43px;
+    height: 23px;
+    margin: 14px 26px 11px 0;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff; 
+      display: inline-block;
+      cursor: pointer;
+      
+    }
+  
+    .account {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      display: inline-block;
+      margin: 0 0 0 26px;
+    padding: 5px 5px 5px 5px;
+      border-radius: 3px;
+    border: solid 1px #ffffff;
+    cursor: pointer;
+  }
+    
+    .customerlogin
+    {
+        display: inline-block;
+        
+    }
+  
+    .header
+    {
+      width: 100%;
+      padding: 1% 2% 1% 3%;
+      background-color: #ce0505;
+    }
+    
+    .username {
+    
+    height: 23px;
+    margin: 14px 26px 11px 0;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff; 
+      display: inline-block;
+      
+    }
+  
+    .logout {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      display: inline-block;
+      margin: 0 0 0 26px;
+    padding: 5px 5px 5px 5px;
+      border-radius: 3px;
+    border: solid 1px #ffffff;
+    cursor: pointer;
+  }
+  .btn-acct-signin{
+        width: 10em;
+  margin-top: 1em;
+  margin-left: 7em;
+  height: 1.9em;
+  background-color: red;
+  color: white;
+  border-radius: 1em;
+  outline: none;
+  cursor: pointer;
+}
+
+  .add-to-cart-modal-close{
+    margin-left: 1em;
+  }
+   
+  }

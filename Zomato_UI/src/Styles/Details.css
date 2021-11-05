@@ -1,0 +1,2011 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  [class*="col-fil"] {
+    float: left;
+    padding: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  @media only screen and (max-width:600px){
+    [class*="col-det"] {
+        width: 100%;
+      }
+    .banner-img{
+        width: 93.5%;
+        margin-left:4.5%;
+        margin-top:2%;
+        height: 360px;
+        }
+        .restaurant-detail{
+            margin-top:3%;
+        }
+        .restaurant-name{
+            font-size: 1.6em;
+            font-family: 'Poppins';
+            font-weight: bold;
+            color: #192f60;
+            margin-left: 5%;
+        }
+        .btn-order-online{
+            margin-top: 1.5%;
+            margin-left: 80%;
+            width: 14%;
+            padding: 0.5%;
+            text-align: center;
+            line-height: 1em;
+            font-family: 'Poppins';
+            color: white;
+            background-color: red;
+            outline: none;
+            font-weight: bold;
+            border-radius: 0.5em;
+            border: none;
+            
+            font-size: 0.6em;
+        }
+        .restaurant-detail-cust{
+            margin-top: 1.5%;
+            margin-left: 5%;
+        }
+        .btn-rest-detail{
+            border-left: none;
+            font-family: 'Poppins';
+            width: 15%;
+            text-align: center;
+            color: #182749;
+            font-weight: bold;
+            font-size: 0.9em;
+            background-color: white;
+            outline: none;
+            /* border-bottom-color: red; */
+            border-top: none;
+            border-right: none;
+            
+            /* border: none; */
+            
+            border-bottom-color: lightgrey;
+            border-bottom-style: solid;
+            cursor: pointer;
+        }
+        .over-view{
+            border-bottom-color: red;
+        }
+        .overview-detail-heading{
+        font-family: Poppins;
+          font-size: 1.1em;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 1%;
+        }
+        .overview-detail-Cuisine{
+        font-family: Poppins;
+          font-size: 0.8em;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 2.5%;
+        }
+        
+        .overview-detail-Cuisine-items{
+          font-family: Poppins;
+          font-size: 0.7em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.88;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 0.3%;
+        }
+        .overview-detail-Cost{
+        font-family: Poppins;
+          font-size: 0.9em;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top:0.9%;
+        }
+        .overview-detail-Cost-detail{
+        font-family: Poppins;
+        font-size: 0.8em;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.86;
+        letter-spacing: normal;
+        text-align: left;
+        color: #192f60;
+        margin-top: 0.3%;
+        }
+        .contact-detail-heading{
+        font-family: Poppins;
+          font-size: 0.9em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 2%;
+        }
+        
+        .contact-detail-number{
+        font-family: Poppins;
+          font-size: 0.8em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          letter-spacing: normal;
+          text-align: left;
+          color: #f67082;
+          margin-top: 0.8%;
+        }
+        
+        .contact-detail-shop-name{
+            font-family: Poppins;
+              font-size: 1.2em;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.56;
+              letter-spacing: normal;
+              text-align: left;
+              color: #192f60;
+              margin-top: 1.5%;
+            }
+        .contact-detail-shop-address{
+            font-family: Poppins;
+          font-size: 0.8em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 0.9%;
+        }
+        .btn-details{
+            border-bottom-color: lightgrey;
+            border-bottom-style: solid;
+        }
+        .image-gallery{
+          position: absolute;
+          margin-top: -9.9%;
+          margin-left: 57%;
+          color: #191995;
+          border: 1% white;
+          background-color: white;
+          font-size: 0.7em;
+          font-weight: bold;
+          font-family: 'Poppins';
+          padding: 0.2%;
+      }
+      .img-gallery-btn{
+        background-color: white;
+        border: none;
+        outline: none;
+        cursor:pointer;
+        font-size: 1em;
+      }
+      .food-has-meat{
+        color: red;
+        border:0.5px;;
+      }
+      .food-has-no-meat{
+        color:green;
+        border:0.5px;
+        border-radius: 0.5px;
+      }
+      .rest-name-menu-card{
+        text-align: left;
+        font-family: Poppins;
+        font-size: 1.4em;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.53;
+        letter-spacing: normal;
+        text-align: left;
+        color: #192f60;
+      
+      }
+      .order-modal-close{
+      margin-left:50%
+      }
+      .gallery-modal-close{
+        margin-left: 95%;
+      }
+      .menu-item-restaurant{
+        text-align: left;
+      }
+      .menu-item-details{
+        display: inline-block;
+        width: 65%;
+      }
+      
+      .item-name{
+        font-family: Poppins;
+        font-size: 1em;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #292c40;
+      
+      }
+      
+      .item-price{
+        font-family: RupeeForadian;
+        font-size: 1em;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.17;
+        letter-spacing: normal;
+        text-align: left;
+        color: #292c40;
+      
+      }
+      .item-description{
+        font-family: RupeeForadian;
+        font-size: 0.8em;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.23;
+        letter-spacing: normal;
+        text-align: left;
+        color: #696b78;
+      
+      }
+      .menu-item-order{
+        display: inline-block;
+        vertical-align: top;
+        width:28%;
+      }
+      
+      .item-image>img{
+        width: 100%;
+        border-radius: 10%;
+      }
+      .btn-item{
+        position: absolute;
+        width: 23%;
+        margin-top: -3.2%;
+        margin-left: 3.5%;
+      }
+      
+      .btn-add-remove{
+        width: 85%;
+        background-color: white;
+        outline: none;
+        border: 1px solid black;
+      }
+      
+      .btn-remove{
+        width: 20%;
+        margin-left: 13%;
+      }
+      
+      .btn-add{
+        width: 20%;
+      }
+      
+      .item-qty{
+        width: 20%;
+      }
+      .item-cost-pay{
+        text-align: left;
+      }
+      .sub-total-items{
+        display: inline-block;
+        font-family: Poppins;
+        font-size: 1.5em;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #292c40;
+        width:60%;
+        margin-top: 1%;
+      
+      }
+      .sub-total-amt{
+        font-family: Poppins;
+        font-size: 1.6empx;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #292c40;
+      
+      }
+      .pay-now-btn{
+        display: inline-block;
+        width: 35%;
+        margin-top: 1%;
+        margin-left: 2%;
+      }
+      .pay-btn{
+        background-color: red;
+        color: white;
+        outline: none;
+        border: none;
+        width: 80%;
+        margin-left: 11%;
+        font-size: 1.1em;
+        border: 1em;
+        padding: 0.5em;
+        border-radius: 0.5em;
+      }
+      .restaurant-name{
+        font-size: 0.8em;
+        font-family: 'Poppins';
+        font-weight: bold;
+        color: #192f60;
+        margin-left: 5%;
+      }
+      .lbl-customer-form{
+        font-size: 0.9em;
+        font-family: 'Poppins';
+        font-weight: bold;
+        color: #192f60;
+        margin-left: 5%;
+        margin-bottom: 6%;;
+      }
+      
+      .customer-detail{
+        width :90%;
+        margin-left: 5%;
+        margin-top:8%;
+      }
+      .customer-detail-lbl{
+        margin-top:5%;
+      }
+      .proceed-btn{
+        background-color: red;
+        color: white;
+        outline: none;
+        width: 50%;
+        margin-left: 45%;
+        font-size: 0.8em;
+        border: 1em;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        margin-top: 8%;
+      }
+
+  
+}
+
+  @media only screen and (min-width: 600px) and (max-width:767px){
+    .col-det-s-1 {width: 8.33%;}
+    .col-det-s-2 {width: 16.66%;}
+    .col-det-s-3 {width: 25%;}
+    .col-det-s-4 {width: 33.00%;}
+    .col-det-s-5 {width: 41.66%;}
+    .col-det-s-6 {width: 50%;}
+    .col-det-s-7 {width: 58.33%;}
+    .col-det-s-8 {width: 66.66%;}
+    .col-det-s-9 {width: 75%;}
+    .col-det-s-10 {width: 83.33%;}
+    .col-det-s-11 {width: 91.66%;}
+    .col-det-s-12 {width: 100%;}
+    .banner-img{
+        width: 93.5%;
+        margin-left:4.5%;
+        margin-top:2%;
+        height: 360px;
+        }
+        .image-gallery{
+            position: absolute;
+            margin-top: -4.9%;
+            margin-left: 67%;
+            color: #191995;
+            border: 1% white;
+            background-color: white;
+            font-size: 0.7em;
+            font-weight: bold;
+            font-family: 'Poppins';
+            padding: 0.2%;
+        }
+        .restaurant-detail{
+            margin-top:3%;
+        }
+        .restaurant-name{
+            font-size: 1.4em;
+            font-family: 'Poppins';
+            font-weight: bold;
+            color: #192f60;
+            margin-left: 5%;
+        }
+        .btn-order-online{
+            margin-top: 1.5%;
+            margin-left: 85%;
+            width: 14%;
+            padding: 0.5%;
+            text-align: center;
+            line-height: 1em;
+            font-family: 'Poppins';
+            color: white;
+            background-color: red;
+            outline: none;
+            font-weight: bold;
+            border-radius: 0.5em;
+            border: none;
+            height: 2.6em;
+            font-size: 0.6em;
+        }
+        .restaurant-detail-cust{
+            margin-top: 1.5%;
+            margin-left: 5%;
+        }
+        .btn-rest-detail{
+            border-left: none;
+            font-family: 'Poppins';
+            width: 15%;
+            text-align: center;
+            color: #182749;
+            font-weight: bold;
+            font-size: 0.9em;
+            background-color: white;
+            outline: none;
+            /* border-bottom-color: red; */
+            border-top: none;
+            border-right: none;
+            
+            /* border: none; */
+            
+            border-bottom-color: lightgrey;
+            border-bottom-style: solid;
+            cursor: pointer;
+        }
+        .over-view{
+            border-bottom-color: red;
+        }
+        .overview-detail-heading{
+        font-family: Poppins;
+          font-size: 1.5em;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 1%;
+        }
+        .overview-detail-Cuisine{
+        font-family: Poppins;
+          font-size: 1em;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 2.5%;
+        }
+        
+        .overview-detail-Cuisine-items{
+          font-family: Poppins;
+          font-size: 0.9em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.88;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 0.3%;
+        }
+        .overview-detail-Cost{
+        font-family: Poppins;
+          font-size: 1em;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top:0.9%;
+        }
+        .overview-detail-Cost-detail{
+        font-family: Poppins;
+        font-size: 0.9em;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.86;
+        letter-spacing: normal;
+        text-align: left;
+        color: #192f60;
+        margin-top: 0.3%;
+        }
+        .contact-detail-heading{
+        font-family: Poppins;
+          font-size: 1em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 2%;
+        }
+        
+        .contact-detail-number{
+        font-family: Poppins;
+          font-size: 0.9em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          letter-spacing: normal;
+          text-align: left;
+          color: #f67082;
+          margin-top: 0.8%;
+        }
+        
+        .contact-detail-shop-name{
+            font-family: Poppins;
+              font-size: 1.2em;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.56;
+              letter-spacing: normal;
+              text-align: left;
+              color: #192f60;
+              margin-top: 1.5%;
+            }
+        .contact-detail-shop-address{
+            font-family: Poppins;
+          font-size: 0.8em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 0.9%;
+        }
+        .btn-details{
+            border-bottom-color: lightgrey;
+            border-bottom-style: solid;
+        }
+        .image-gallery{
+          position: absolute;
+          margin-top: -9.9%;
+          margin-left: 65%;
+          color: #191995;
+          border: 1% white;
+          background-color: white;
+          font-size: 0.7em;
+          font-weight: bold;
+          font-family: 'Poppins';
+          padding: 0.2%;
+      }
+      .img-gallery-btn{
+        background-color: white;
+        border: none;
+        outline: none;
+        cursor:pointer;
+      }
+      .food-has-meat{
+        color: red;
+        border:0.5px;;
+      }
+      .food-has-no-meat{
+        color:green;
+        border:0.5px;
+        border-radius: 0.5px;
+      }
+      .rest-name-menu-card{
+        text-align: left;
+        font-family: Poppins;
+        font-size: 1.4em;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.53;
+        letter-spacing: normal;
+        text-align: left;
+        color: #192f60;
+      
+      }
+      .order-modal-close{
+      margin-left:50%
+      }
+      .gallery-modal-close{
+        margin-left: 95%;
+      }
+      .menu-item-restaurant{
+        text-align: left;
+      }
+      .menu-item-details{
+        display: inline-block;
+        width: 65%;
+      }
+      
+      .item-name{
+        font-family: Poppins;
+        font-size: 1em;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #292c40;
+      
+      }
+      
+      .item-price{
+        font-family: RupeeForadian;
+        font-size: 1em;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.17;
+        letter-spacing: normal;
+        text-align: left;
+        color: #292c40;
+      
+      }
+      .item-description{
+        font-family: RupeeForadian;
+        font-size: 0.8em;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.23;
+        letter-spacing: normal;
+        text-align: left;
+        color: #696b78;
+      
+      }
+      .menu-item-order{
+        display: inline-block;
+        vertical-align: top;
+        width:28%;
+      }
+      
+      .item-image>img{
+        width: 100%;
+        border-radius: 10%;
+      }
+      .btn-item{
+        position: absolute;
+        width: 23%;
+        margin-top: -3.2%;
+        margin-left: 3.5%;
+      }
+      
+      .btn-add-remove{
+        width: 85%;
+        background-color: white;
+        outline: none;
+        border: 1px solid black;
+      }
+      
+      .btn-remove{
+        width: 20%;
+        margin-left: 13%;
+      }
+      
+      .btn-add{
+        width: 20%;
+      }
+      
+      .item-qty{
+        width: 20%;
+      }
+      .item-cost-pay{
+        text-align: left;
+      }
+      .sub-total-items{
+        display: inline-block;
+        font-family: Poppins;
+        font-size: 1.5em;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #292c40;
+        width:60%;
+        margin-top: 1%;
+      
+      }
+      .sub-total-amt{
+        font-family: Poppins;
+        font-size: 1.6empx;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #292c40;
+      
+      }
+      .pay-now-btn{
+        display: inline-block;
+        width: 35%;
+        margin-top: 1%;
+        margin-left: 2%;
+      }
+      .pay-btn{
+        background-color: red;
+        color: white;
+        outline: none;
+        border: none;
+        width: 80%;
+        margin-left: 11%;
+        font-size: 1.1em;
+        border: 1em;
+        padding: 0.5em;
+        border-radius: 0.5em;
+      }
+      .restaurant-form-name{
+        font-size: 1em;
+        font-family: 'Poppins';
+        font-weight: bold;
+        color: #192f60;
+        margin-left: 5%;
+      }
+      .lbl-customer-form{
+        font-size: 0.9em;
+        font-family: 'Poppins';
+        font-weight: bold;
+        color: #192f60;
+        margin-left: 5%;
+        margin-bottom: 6%;;
+      }
+      
+      .customer-detail{
+        width :90%;
+        margin-left: 5%;
+        margin-top:8%;
+      }
+      .customer-detail-lbl{
+        margin-top:5%;
+      }
+      .proceed-btn{
+        background-color: red;
+        color: white;
+        outline: none;
+        width: 50%;
+        margin-left: 45%;
+        font-size: 0.8em;
+        border: 1em;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        margin-top: 8%;
+      }
+
+  
+}
+  /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:991px){
+    .col-det-m-1 {width: 8.33%;}
+    .col-det-m-2 {width: 16.66%;}
+    .col-det-m-3 {width: 25%;}
+    .col-det-m-4 {width: 33.00%;}
+    .col-det-m-5 {width: 41.66%;}
+    .col-det-m-6 {width: 50%;}
+    .col-det-m-7 {width: 58.33%;}
+    .col-det-m-8 {width: 66.66%;}
+    .col-det-m-9 {width: 75%;}
+    .col-det-m-10 {width: 83.33%;}
+    .col-det-m-11 {width: 91.66%;}
+    .col-det-m-12 {width: 100%;}
+    .banner-img{
+        width: 93.5%;
+        margin-left:4.5%;
+        margin-top:2%;
+        height: 360px;
+        }
+        .image-gallery{
+            position: absolute;
+            margin-top: -4.2%;
+            margin-left: 74%;
+            color: #191995;
+            border: 1% white;
+            background-color: white;
+            font-size: 0.9em;
+            font-weight: bold;
+            font-family: 'Poppins';
+            padding: 0.2%;
+        }
+        .restaurant-detail{
+            margin-top:3%;
+        }
+        .restaurant-name{
+            font-size: 1.6em;
+            font-family: 'Poppins';
+            font-weight: bold;
+            color: #192f60;
+            margin-left: 5%;
+        }
+        .btn-order-online{
+            margin-top: 1.5%;
+            margin-left: 85%;
+            width: 13%;
+            padding: 0.6%;
+            text-align: center;
+            line-height: 1em;
+            font-family: 'Poppins';
+            color: white;
+            background-color: red;
+            outline: none;
+            font-weight: bold;
+            border-radius: 0.5em;
+            border: none;
+            height: 2.6em;
+        }
+        .restaurant-detail-cust{
+            margin-top: 1.5%;
+            margin-left: 5%;
+        }
+        .btn-rest-detail{
+            border-left: none;
+            font-family: 'Poppins';
+            width: 15%;
+            text-align: center;
+            color: #182749;
+            font-weight: bold;
+            font-size: 0.9em;
+            background-color: white;
+            outline: none;
+            /* border-bottom-color: red; */
+            border-top: none;
+            border-right: none;
+            
+            /* border: none; */
+            
+            border-bottom-color: lightgrey;
+            border-bottom-style: solid;
+            cursor: pointer;
+        }
+        .over-view{
+            border-bottom-color: red;
+        }
+        .overview-detail-heading{
+        font-family: Poppins;
+          font-size: 1.5em;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 1%;
+        }
+        .overview-detail-Cuisine{
+        font-family: Poppins;
+          font-size: 1em;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 2.5%;
+        }
+        
+        .overview-detail-Cuisine-items{
+          font-family: Poppins;
+          font-size: 0.9em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.88;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 0.3%;
+        }
+        .overview-detail-Cost{
+        font-family: Poppins;
+          font-size: 1em;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top:0.9%;
+        }
+        .overview-detail-Cost-detail{
+        font-family: Poppins;
+        font-size: 0.9em;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.86;
+        letter-spacing: normal;
+        text-align: left;
+        color: #192f60;
+        margin-top: 0.3%;
+        }
+        .contact-detail-heading{
+        font-family: Poppins;
+          font-size: 1em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 2%;
+        }
+        
+        .contact-detail-number{
+        font-family: Poppins;
+          font-size: 0.9em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          letter-spacing: normal;
+          text-align: left;
+          color: #f67082;
+          margin-top: 0.8%;
+        }
+        
+        .contact-detail-shop-name{
+            font-family: Poppins;
+              font-size: 1.2em;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.56;
+              letter-spacing: normal;
+              text-align: left;
+              color: #192f60;
+              margin-top: 1.5%;
+            }
+        .contact-detail-shop-address{
+            font-family: Poppins;
+          font-size: 0.8em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 0.9%;
+        }
+        .btn-details{
+            border-bottom-color: lightgrey;
+            border-bottom-style: solid;
+        }
+        .food-has-meat{
+          color: red;
+          border:0.5px;;
+        }
+        .food-has-no-meat{
+          color:green;
+          border:0.5px;
+          border-radius: 0.5px;
+        }
+        .rest-name-menu-card{
+          text-align: left;
+          font-family: Poppins;
+          font-size: 1.4em;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.53;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+        
+        }
+        .order-modal-close{
+        margin-left:60%
+        }
+        .gallery-modal-close{
+          margin-left: 95%;
+        }
+        .menu-item-restaurant{
+          text-align: left;
+        }
+        .menu-item-details{
+          display: inline-block;
+          width: 65%;
+        }
+        
+        .item-name{
+          font-family: Poppins;
+          font-size: 1em;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #292c40;
+        
+        }
+        
+        .item-price{
+          font-family: RupeeForadian;
+          font-size: 1em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.17;
+          letter-spacing: normal;
+          text-align: left;
+          color: #292c40;
+        
+        }
+        .item-description{
+          font-family: RupeeForadian;
+          font-size: 0.8em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.23;
+          letter-spacing: normal;
+          text-align: left;
+          color: #696b78;
+        
+        }
+        .menu-item-order{
+          display: inline-block;
+          vertical-align: top;
+          width:28%;
+        }
+        
+        .item-image>img{
+          width: 100%;
+          border-radius: 10%;
+        }
+        .btn-item{
+          position: absolute;
+          width: 23%;
+          margin-top: -3.2%;
+          margin-left: 3.5%;
+        }
+        
+        .btn-add-remove{
+          width: 85%;
+          background-color: white;
+          outline: none;
+          border: 1px solid black;
+        }
+        
+        .btn-remove{
+          width: 20%;
+          margin-left: 13%;
+        }
+        
+        .btn-add{
+          width: 20%;
+        }
+        
+        .item-qty{
+          width: 20%;
+        }
+        .item-cost-pay{
+          text-align: left;
+        }
+        .sub-total-items{
+          display: inline-block;
+          font-family: Poppins;
+          font-size: 1.5em;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #292c40;
+          width:60%;
+          margin-top: 1%;
+        
+        }
+        .sub-total-amt{
+          font-family: Poppins;
+          font-size: 1.6empx;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #292c40;
+        
+        }
+        .pay-now-btn{
+          display: inline-block;
+          width: 35%;
+          margin-top: 1%;
+          margin-left: 2%;
+        }
+        .pay-btn{
+          background-color: red;
+          color: white;
+          outline: none;
+          border: none;
+          width: 80%;
+          margin-left: 11%;
+          font-size: 1.1em;
+          border: 1em;
+          padding: 0.5em;
+          border-radius: 0.5em;
+        }
+        .restaurant-form-name{
+          font-size: 0.8em;
+          font-family: 'Poppins';
+          font-weight: bold;
+          color: #192f60;
+          margin-left: 5%;
+        }
+        .lbl-customer-form{
+          font-size: 0.9em;
+          font-family: 'Poppins';
+          font-weight: bold;
+          color: #192f60;
+          margin-left: 5%;
+          margin-bottom: 6%;;
+        }
+        
+        .customer-detail{
+          width :90%;
+          margin-left: 5%;
+          margin-top:8%;
+        }
+        .customer-detail-lbl{
+          margin-top:5%;
+        }
+        .proceed-btn{
+          background-color: red;
+          color: white;
+          outline: none;
+          width: 50%;
+          margin-left: 45%;
+          font-size: 0.8em;
+          border: 1em;
+          padding: 0.5em;
+          border-radius: 0.5em;
+          margin-top: 8%;
+        }
+  
+  
+  
+}
+ 
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+    .col-det-lg-1 {width: 8.33%;}
+    .col-det-lg-2 {width: 16.66%;}
+    .col-det-lg-3 {width: 25%;}
+    .col-det-lg-4 {width: 33.00%;}
+    .col-det-lg-5 {width: 41.66%;}
+    .col-det-lg-6 {width: 50%;}
+    .col-det-lg-7 {width: 58.33%;}
+    .col-det-lg-8 {width: 66.66%;}
+    .col-det-lg-9 {width: 75%;}
+    .col-det-lg-10 {width: 83.33%;}
+    .col-det-lg-11 {width: 91.66%;}
+    .col-det-lg-12 {width: 100%;}
+
+    .banner-img{
+        width: 93.5%;
+        margin-left:4.5%;
+        margin-top:2%;
+        height: 360px;
+        }
+        .image-gallery{
+            position: absolute;
+            margin-top: -3.5%;
+            margin-left: 76%;
+            color: #191995;
+            border: 1% white;
+            background-color: white;
+            font-size: 0.9em;
+            font-weight: bold;
+            font-family: 'Poppins';
+            padding: 0.2%;
+        }
+        .restaurant-detail{
+            margin-top:3%;
+        }
+        .restaurant-name{
+            font-size: 1.6em;
+            font-family: 'Poppins';
+            font-weight: bold;
+            color: #192f60;
+            margin-left: 5%;
+        }
+        .btn-order-online{
+            margin-top: 1.5%;
+            margin-left: 85%;
+            width: 13%;
+            padding: 0.6%;
+            text-align: center;
+            line-height: 1em;
+            font-family: 'Poppins';
+            color: white;
+            background-color: red;
+            outline: none;
+            font-weight: bold;
+            border-radius: 0.5em;
+            border: none;
+            height: 2.6em;
+        }
+        .restaurant-detail-cust{
+            margin-top: 1.5%;
+            margin-left: 5%;
+        }
+        .btn-rest-detail{
+            border-left: none;
+            font-family: 'Poppins';
+            width: 15%;
+            text-align: center;
+            color: #182749;
+            font-weight: bold;
+            font-size: 0.9em;
+            background-color: white;
+            outline: none;
+            /* border-bottom-color: red; */
+            border-top: none;
+            border-right: none;
+            
+            /* border: none; */
+            
+            border-bottom-color: lightgrey;
+            border-bottom-style: solid;
+            cursor: pointer;
+        }
+        .over-view{
+            border-bottom-color: red;
+        }
+        .overview-detail-heading{
+        font-family: Poppins;
+          font-size: 1.5em;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 1%;
+        }
+        .overview-detail-Cuisine{
+        font-family: Poppins;
+          font-size: 1em;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 2.5%;
+        }
+        
+        .overview-detail-Cuisine-items{
+          font-family: Poppins;
+          font-size: 0.9em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.88;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 0.3%;
+        }
+        .overview-detail-Cost{
+        font-family: Poppins;
+          font-size: 1em;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top:0.9%;
+        }
+        .overview-detail-Cost-detail{
+        font-family: Poppins;
+        font-size: 0.9em;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.86;
+        letter-spacing: normal;
+        text-align: left;
+        color: #192f60;
+        margin-top: 0.3%;
+        }
+        .contact-detail-heading{
+        font-family: Poppins;
+          font-size: 1em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 2%;
+        }
+        
+        .contact-detail-number{
+        font-family: Poppins;
+          font-size: 0.9em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          letter-spacing: normal;
+          text-align: left;
+          color: #f67082;
+          margin-top: 0.8%;
+        }
+        
+        .contact-detail-shop-name{
+            font-family: Poppins;
+              font-size: 1.2em;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.56;
+              letter-spacing: normal;
+              text-align: left;
+              color: #192f60;
+              margin-top: 1.5%;
+            }
+        .contact-detail-shop-address{
+            font-family: Poppins;
+          font-size: 0.8em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+          margin-top: 0.9%;
+        }
+        .btn-details{
+            border-bottom-color: lightgrey;
+            border-bottom-style: solid;
+        }
+        .food-has-meat{
+          color: red;
+          border:0.5px;;
+        }
+        .food-has-no-meat{
+          color:green;
+          border:0.5px;
+          border-radius: 0.5px;
+        }
+        .rest-name-menu-card{
+          text-align: left;
+          font-family: Poppins;
+          font-size: 1.4em;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.53;
+          letter-spacing: normal;
+          text-align: left;
+          color: #192f60;
+        
+        }
+        .order-modal-close{
+        margin-left:60%
+        }
+        .gallery-modal-close{
+          margin-left: 95%;
+        }
+        .menu-item-restaurant{
+          text-align: left;
+        }
+        .menu-item-details{
+          display: inline-block;
+          width: 65%;
+        }
+        
+        .item-name{
+          font-family: Poppins;
+          font-size: 1em;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #292c40;
+        
+        }
+        
+        .item-price{
+          font-family: RupeeForadian;
+          font-size: 1em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.17;
+          letter-spacing: normal;
+          text-align: left;
+          color: #292c40;
+        
+        }
+        .item-description{
+          font-family: RupeeForadian;
+          font-size: 0.8em;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.23;
+          letter-spacing: normal;
+          text-align: left;
+          color: #696b78;
+        
+        }
+        .menu-item-order{
+          display: inline-block;
+          vertical-align: top;
+          width:28%;
+        }
+        
+        .item-image>img{
+          width: 100%;
+          border-radius: 10%;
+        }
+        .btn-item{
+          position: absolute;
+          width: 23%;
+          margin-top: -3.2%;
+          margin-left: 3.5%;
+        }
+        
+        .btn-add-remove{
+          width: 85%;
+          background-color: white;
+          outline: none;
+          border: 1px solid black;
+        }
+        
+        .btn-remove{
+          width: 20%;
+          margin-left: 13%;
+        }
+        
+        .btn-add{
+          width: 20%;
+        }
+        
+        .item-qty{
+          width: 20%;
+        }
+        .item-cost-pay{
+          text-align: left;
+        }
+        .sub-total-items{
+          display: inline-block;
+          font-family: Poppins;
+          font-size: 1.5em;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #292c40;
+          width:60%;
+          margin-top: 1%;
+        
+        }
+        .sub-total-amt{
+          font-family: Poppins;
+          font-size: 1.6empx;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #292c40;
+        
+        }
+        .pay-now-btn{
+          display: inline-block;
+          width: 35%;
+          margin-top: 1%;
+          margin-left: 2%;
+        }
+        .pay-btn{
+          background-color: red;
+          color: white;
+          outline: none;
+          border: none;
+          width: 80%;
+          margin-left: 11%;
+          font-size: 1.1em;
+          border: 1em;
+          padding: 0.5em;
+          border-radius: 0.5em;
+        }
+        .restaurant-form-name{
+          font-size: 1em;
+          font-family: 'Poppins';
+          font-weight: bold;
+          color: #192f60;
+          margin-left: 5%;
+        }
+        .lbl-customer-form{
+          font-size: 0.9em;
+          font-family: 'Poppins';
+          font-weight: bold;
+          color: #192f60;
+          margin-left: 5%;
+          margin-bottom: 6%;;
+        }
+        
+        .customer-detail{
+          width :90%;
+          margin-left: 5%;
+          margin-top:8%;
+        }
+        .customer-detail-lbl{
+          margin-top:5%;
+        }
+        .proceed-btn{
+          background-color: red;
+          color: white;
+          outline: none;
+          width: 50%;
+          margin-left: 45%;
+          font-size: 0.8em;
+          border: 1em;
+          padding: 0.5em;
+          border-radius: 0.5em;
+          margin-top: 8%;
+        }
+  
+  
+  
+}
+@media only screen and (min-width: 1200px) {
+    .col-det-xlg-1 {width: 8.33%;}
+    .col-det-xlg-2 {width: 16.66%;}
+    .col-det-xlg-3 {width: 25%;}
+    .col-det-xlg-4 {width: 33.00%;}
+    .col-det-xlg-5 {width: 41.66%;}
+    .col-det-xlg-6 {width: 50%;}
+    .col-det-xlg-7 {width: 58.33%;}
+    .col-det-xlg-8 {width: 66.66%;}
+    .col-det-xlg-9 {width: 75%;}
+    .col-det-xlg-10 {width: 83.33%;}
+    .col-det-xlg-11 {width: 91.66%;}
+    .col-det-xlg-12 {width: 100%;}
+.banner-img{
+width: 93.5%;
+margin-left:4.5%;
+margin-top:2%;
+height: 360px;
+}
+.image-gallery{
+    position: absolute;
+    margin-top: -3.5%;
+    margin-left: 80%;
+    color: #191995;
+    border: 1% white;
+    background-color: white;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Poppins';
+    padding: 0.2%;
+}
+.restaurant-detail{
+    margin-top:3%;
+}
+.restaurant-name{
+    font-size: 1.6em;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: #192f60;
+    margin-left: 5%;
+}
+.btn-order-online{
+    margin-top: 1.5%;
+    margin-left: 85%;
+    width: 13%;
+    padding: 0.6%;
+    text-align: center;
+    line-height: 1em;
+    font-family: 'Poppins';
+    color: white;
+    background-color: red;
+    outline: none;
+    font-weight: bold;
+    border-radius: 0.5em;
+    border: none;
+    height: 2.6em;
+}
+.restaurant-detail-cust{
+    margin-top: 1.5%;
+    margin-left: 5%;
+}
+.btn-rest-detail{
+    border-left: none;
+    font-family: 'Poppins';
+    width: 15%;
+    text-align: center;
+    color: #182749;
+    font-weight: bold;
+    font-size: 0.9em;
+    background-color: white;
+    outline: none;
+    /* border-bottom-color: red; */
+    border-top: none;
+    border-right: none;
+    
+    /* border: none; */
+    
+    border-bottom-color: lightgrey;
+    border-bottom-style: solid;
+    cursor: pointer;
+}
+.over-view{
+    border-bottom-color: red;
+}
+.overview-detail-heading{
+font-family: Poppins;
+  font-size: 1.5em;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+  margin-top: 1%;
+}
+.overview-detail-Cuisine{
+font-family: Poppins;
+  font-size: 1em;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+  margin-top: 2.5%;
+}
+
+.overview-detail-Cuisine-items{
+  font-family: Poppins;
+  font-size: 0.9em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+  margin-top: 0.3%;
+}
+.overview-detail-Cost{
+font-family: Poppins;
+  font-size: 1em;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+  margin-top:0.9%;
+}
+.overview-detail-Cost-detail{
+font-family: Poppins;
+font-size: 0.9em;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.86;
+letter-spacing: normal;
+text-align: left;
+color: #192f60;
+margin-top: 0.3%;
+}
+.contact-detail-heading{
+font-family: Poppins;
+  font-size: 1em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+  margin-top: 2%;
+}
+
+.contact-detail-number{
+font-family: Poppins;
+  font-size: 0.9em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f67082;
+  margin-top: 0.8%;
+}
+
+.contact-detail-shop-name{
+    font-family: Poppins;
+      font-size: 1.2em;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      text-align: left;
+      color: #192f60;
+      margin-top: 1.5%;
+    }
+.contact-detail-shop-address{
+    font-family: Poppins;
+  font-size: 0.8em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+  margin-top: 0.9%;
+}
+.btn-details{
+    border-bottom-color: lightgrey;
+    border-bottom-style: solid;
+}
+.food-has-meat{
+  color: red;
+  border:1px;;
+}
+.food-has-no-meat{
+  color:green;
+  border:1px;
+  border-radius: 0.5px;
+}
+.rest-name-menu-card{
+  text-align: left;
+  font-family: Poppins;
+  font-size: 2em;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+
+}
+.order-modal-close{
+margin-left:50%
+}
+.gallery-modal-close{
+  margin-left: 95%;
+}
+.menu-item-restaurant{
+  text-align: left;
+}
+.menu-item-details{
+  display: inline-block;
+  width: 65%;
+}
+
+.item-name{
+  font-family: Poppins;
+  font-size: 1em;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #292c40;
+
+}
+
+.item-price{
+  font-family: RupeeForadian;
+  font-size: 1em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: left;
+  color: #292c40;
+
+}
+.item-description{
+  font-family: RupeeForadian;
+  font-size: 0.8em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #696b78;
+
+}
+.menu-item-order{
+  display: inline-block;
+  vertical-align: top;
+  width:28%;
+}
+
+.item-image>img{
+  width: 100%;
+  border-radius: 10%;
+}
+.btn-item{
+  position: absolute;
+  width: 23%;
+  margin-top: -3.2%;
+  margin-left: 3.5%;
+}
+
+.btn-add-remove{
+  width: 85%;
+  background-color: white;
+  outline: none;
+  border: 1px solid black;
+}
+
+.btn-remove{
+  width: 20%;
+  margin-left: 13%;
+}
+
+.btn-add{
+  width: 20%;
+}
+
+.item-qty{
+  width: 20%;
+}
+.item-cost-pay{
+  text-align: left;
+}
+.sub-total-items{
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #292c40;
+  width:60%;
+  margin-top: 1%;
+
+}
+.sub-total-amt{
+  font-family: Poppins;
+  font-size: 1.6empx;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #292c40;
+
+}
+.pay-now-btn{
+  display: inline-block;
+  width: 35%;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+.pay-btn{
+  background-color: red;
+  color: white;
+  outline: none;
+  border: none;
+  width: 80%;
+  margin-left: 11%;
+  font-size: 1.1em;
+  border: 1em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+.restaurant-form-name{
+  font-size: 1.2em;
+  font-family: 'Poppins';
+  font-weight: bold;
+  color: #192f60;
+  margin-left: 5%;
+}
+.lbl-customer-form{
+  font-size: 0.9em;
+  font-family: 'Poppins';
+  font-weight: bold;
+  color: #192f60;
+  margin-left: 5%;
+  margin-bottom: 6%;;
+}
+
+.customer-detail{
+  width :90%;
+  margin-left: 5%;
+  margin-top:8%;
+}
+.customer-detail-lbl{
+  margin-top:5%;
+}
+.proceed-btn{
+  background-color: red;
+  color: white;
+  outline: none;
+  width: 50%;
+  margin-left: 45%;
+  font-size: 0.8em;
+  border: 1em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin-top: 8%;
+}
+}
+
