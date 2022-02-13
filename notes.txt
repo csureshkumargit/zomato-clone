@@ -1,0 +1,1 @@
+UI id done with class component. For functional component please visit repo https://github.com/csureshkumargit/zomato_clone/tree/master/Zomato_Clone_UI.
